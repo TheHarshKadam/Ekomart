@@ -43,6 +43,22 @@
         input[type="text"]::placeholder { 
              padding-left: 20px;
         }
+        #ulList{
+            padding-left:250px; 
+            margin-top: -20px;
+            display: inline-flex;
+        }
+        #dropdownlist{
+            height: 80px;
+            left: 400px;
+            top: -3px;
+        }
+        #jumbostyle{
+            background-color: rgb(46, 44, 44); 
+            top: -30;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
     </style>
     <body>
         <body>
@@ -95,7 +111,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a>
+                                <a href="#">
                                     <span class="glyphicon glyphicon-shopping-cart" style="font-size:larger;left: -40px;color: black;"></span>
                                 </a>
                             </li>
@@ -108,5 +124,116 @@
                     </div>
                 </div>
             </nav>
+            <nav class="navbar navbar-static-top">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-left" id="ulList">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="drop-down">
+                                        <li data-toggle="dropdown" style="color: black; font-weight: bold;">Home
+                                            <span class="caret"></span>
+                                        </li>
+                                    <ul class="dropdown-menu" id="dropdownlist">
+                                        <li>Home 1</li>
+                                        <li>Home 2</li>
+                                        <li>Home 3</li>
+                                    </ul>
+                                </div>
+                            </a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+                            <a href="#" style="text-decoration: none;">
+                                <li style="color: black; font-weight: bold;">About</li>
+                            </a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+                            <a href="#" style="text-decoration: none;">
+                                <div class="drop-down">
+                                    <li class="data-toggle:dropdown" type="button"style="color: black; font-weight:bold">Shop
+                                        <span class="caret"></span>
+                                    </li>
+                                <ul class="dropdown-menu">
+                                    <li>Home 1</li>
+                                    <li>Home 2</li>
+                                    <li>Home 3</li>
+                                </ul>
+                            </div>
+                            </a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+                            <a href="#" style="text-decoration: none;">
+                                <div class="drop-down">
+                                    <li style="color: black; font-weight: bold;">Blog
+                                        <span class="caret"></span>
+                                    </li>
+                                <ul class="dropdown-menu">
+                                    <li>Home 1</li>
+                                    <li>Home 2</li>
+                                    <li>Home 3</li>
+                                </ul>
+                            </div>
+                            </a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+                            <a href="#" style="text-decoration: none;">
+                                <div class="drop-down">
+                                    <li style="color: black; font-weight: bold;">Pages
+                                        <span class="caret"></span>
+                                    </li>
+                                <ul class="dropdown-menu">
+                                    <li>Home 1</li>
+                                    <li>Home 2</li>
+                                    <li>Home 3</li>
+                                </ul>
+                            </div>
+                            </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+                            <a href="#" style="text-decoration: none;">
+                                <li style="color: red; font-weight: bold;">Contact</li>
+                            </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="jumbotron" id="jumbostyle">
+                <center><h2 style="color: white; font-weight: bold;">Contact</h2></center>
+                <center>
+                    <a href="#" style="color: white; font-size: small;">
+                        <span class="glyphicon glyphicon-home"></span>
+                        Home
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <a href="#" style="color: gray;">Contact</a>
+                    </a>
+                </center>
+            </div><br><br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2 style="font-weight: bolder; color: #000;">Visit one of our agency <br> location or <br> contact us today</h2>
+                        <p style="font-weight: bold;">Head Office</p>
+                        <ul style="list-style-type: none;margin-left: -40px;">
+                            <li >
+                                <p><span class="glyphicon glyphicon-map-marker"></span>&nbsp; 56 Glassford Street Glasgow G1 1UL New York </p>
+                            </li>
+                            <li >
+                                <p><span class="glyphicon glyphicon-envelope"></span>&nbsp; contact@example.com</p>
+                            </li>
+                            <li >
+                                <p><span class="glyphicon glyphicon-earphone"></span>&nbsp; +844 123 456 78</p>
+                            </li>
+                            <li >
+                                <p><span class="glyphicon glyphicon-time"></span>&nbsp; Monday to Saturday: 9am to 6pm</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8">
+                        <div id="googleMap" style=" width:800px;height:500px; "></div>
+
+                         <script>
+                            function myMap() {
+                            var mapProp= {
+                            center:new google.maps.LatLng(51.508742,-0.120850),
+                            zoom:5,
+                            };
+                            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                            }
+                         </script>
+
+                         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVBKQo924PcAER809X7W2Q-TGhGxF4AAU&callback=myMap"></script>
+
+                    </div>
+                </div>
+            </div>
     </body>
 </html>
