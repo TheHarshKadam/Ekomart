@@ -1,0 +1,82 @@
+.vertical {
+    border-left: 1px solid rgb(182, 173, 173);
+    height: 140px;
+    position:absolute;
+    left: 25%;
+}
+#searchbox{
+    padding: 8px;
+    margin-top: 8px;
+    font-size: 17px;
+    margin-right: 400px;
+    width: 370px;
+}
+#search{
+    margin-left: -500px; 
+    padding-left: 15px; 
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: red;
+    color: white;
+    box-shadow: none;
+    border: red;
+    font-weight: bold;
+}
+#icon{
+    margin-left:-345px;
+    color: black;
+}
+#submitbutton{
+    background-color: red;
+    border: red;
+    box-shadow: none;
+    color: white; 
+    padding: 5px; 
+    padding-left: 15px; 
+    padding-right: 15px; 
+    font-family: 'Josefin Sans', sans-serif;
+}
+input[type="text"]::placeholder { 
+     padding-left: 20px;
+}
+#ulList{
+    padding-left:250px; 
+    margin-top: -20px;
+    display: inline-flex;
+}
+#dropdownlist{
+    height: 80px;
+    left: 400px;
+    top: -3px;
+}
+#jumbostyle{
+    background-color: rgb(46, 44, 44); 
+    top: -30;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.avatar{
+    vertical-align: middle;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+#footer{
+    background-color: rgb(46, 44, 44);
+    padding-left: 20px; 
+}
+#footerlink{
+    text-decoration: none;
+    color: white;
+}
+#h_tag{
+    color: white;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#f_p_tag{
+    color: white;
+    font-weight: bold;
+    font-family: 'Athiti', sans-serif;
+}
