@@ -9,57 +9,9 @@
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis&family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap/css/custom-css.css">
     </head>
-    <style>
-        .vertical {
-            border-left: 1px solid rgb(182, 173, 173);
-            height: 140px;
-            position:absolute;
-            left: 25%;
-        }
-        #searchbox{
-            padding: 8px;
-            margin-top: 8px;
-            font-size: 17px;
-            margin-right: 400px;
-            width: 370px;
-        }
-        #search{
-            margin-left: -500px; 
-            padding-left: 15px; 
-            padding-right: 15px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            background-color: red;
-            color: white;
-            box-shadow: none;
-            border: red;
-            font-weight: bold;
-        }
-        #icon{
-            margin-left:-345px;
-            color: black;
-        }
-        input[type="text"]::placeholder { 
-             padding-left: 20px;
-        }
-        #ulList{
-            padding-left:250px; 
-            margin-top: -20px;
-            display: inline-flex;
-        }
-        #dropdownlist{
-            height: 80px;
-            left: 400px;
-            top: -3px;
-        }
-        #jumbostyle{
-            background-color: rgb(46, 44, 44); 
-            top: -30;
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
-    </style>
     <body>
         <body>
             <nav class="navbar navbar-static-top">
@@ -200,9 +152,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-4">
-                        <h2 style="font-weight: bolder; color: #000;">Visit one of our agency <br> location or <br> contact us today</h2>
-                        <p style="font-weight: bold;">Head Office</p>
-                        <ul style="list-style-type: none;margin-left: -40px;">
+                        <h2 style="font-weight: bolder; color: #000;font-family: 'Josefin Sans', sans-serif;">Visit one of our agency <br> location or <br> contact us today</h2>
+                        <p style="font-weight: bold; font-family: 'Josefin Sans', sans-serif;">Head Office</p>
+                        <ul style="list-style-type: none;margin-left: -40px; font-family: 'Athiti', sans-serif; color: rgb(7, 7, 7); font-weight: bold;">
                             <li >
                                 <p><span class="glyphicon glyphicon-map-marker"></span>&nbsp; 56 Glassford Street Glasgow G1 1UL New York </p>
                             </li>
@@ -218,7 +170,7 @@
                         </ul>
                     </div>
                     <div class="col-sm-8">
-                        <div id="googleMap" style=" width:800px;height:500px; "></div>
+                        <div id="googleMap" style=" width:900px;height:500px; "></div>
 
                          <script>
                             function myMap() {
@@ -231,9 +183,115 @@
                          </script>
 
                          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVBKQo924PcAER809X7W2Q-TGhGxF4AAU&callback=myMap"></script>
-
                     </div>
                 </div>
             </div>
+            <br><br><br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p style=" font-weight:bolder; font-family: 'Athiti', sans-serif;">Leave us a Message</p>
+                        <h2 style="font-weight: bolder; color: black;font-family: 'Josefin Sans', sans-serif;">We Love To Hear From You</h2>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="Name" id="textbox" placeholder="Your Name" style="width: 700px;">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="email" id="textbox" placeholder="Email" style="width: 700px;">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="email" id="textbox" placeholder="Subject" style="width: 700px;">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="6" placeholder="Message" style="width: 700px;"></textarea>
+                            </div>
+                            <div><button id="submitbutton">Submit</button></div>
+                        </form>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="container-fluid" style="margin-left: 60px;">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="Assets/avatar 1.png" alt=" Senior Manager" class="avatar">
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4 style="font-weight: bold;font-family: 'Josefin Sans', sans-serif;">John Doe</h4>
+                                <p style="font-weight: bold;font-family: 'Athiti', sans-serif;">Senior Marketing Manager <br>
+                                   Phone: +844 123 444 77 88 <br>
+                                   Email: contact@example.com
+                                </p>
+                                </div>
+                            </div><br><br>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="Assets/avatar2.png" alt="Manager" class="avatar">
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4 style="font-weight: bold;font-family: 'Josefin Sans', sans-serif;">William Smith</h4>
+                                <p style="font-weight: bold;font-family: 'Athiti', sans-serif;">Recruting Manager <br>
+                                   Phone: +844 123 444 77 88 <br>
+                                   Email: contact@example.com
+                                </p>
+                                </div>
+                            </div><br><br>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="Assets/avatar 3.png" alt="Human Resource" class="avatar">
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4 style="font-weight: bold;font-family: 'Josefin Sans', sans-serif;">Emma Stone</h4>
+                                <p style="font-weight: bold;font-family: 'Athiti', sans-serif;">Human Resource<br>
+                                   Phone: +844 123 444 77 88 <br>
+                                   Email: contact@example.com
+                                </p>
+                                </div>
+                            </div><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-left: 50px; margin-right: 50px;margin-bottom: 50px;border-color: rgb(100, 92, 92);">
+            <br><br><br>
+            <center><img src="Assets/tags.jpeg" alt="tags"></center><br><br><br>
+            <div id="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h4 id="h_tag">CONTACT US</h4>
+                        <p id="f_p_tag">If you have any queries please <br> contact us at <br> contact@example.com</p>
+                     </div>
+                      <div class="col-sm-3">
+                        <h4 id="h_tag">STORE LOCATION</h4>
+                        <p id="f_p_tag">Box 565, Charlestown, Nevis-West, <br> Manhattan Newyork</p><br><br><br>
+                        <p id="f_p_tag">Monday-Friday: 8am to 4pm <br> Saturday: 9am-5pm</p>
+                     </div>
+                      <div class="col-sm-3">
+                        <h4 id="h_tag">CATEGORIES</h4>
+                        <ul style="list-style-type: none; font-weight: bold;font-family: 'Athiti', sans-serif;">
+                            <a href="#"id="footerlink"><li>For Men</li></a>
+                            <a href="#" id="footerlink"><li>For Women</li></a>
+                            <a href="#"id="footerlink"><li>Accessories</li></a>
+                            <a href="#"id="footerlink"><li>Collections</li></a>
+                            <a href="#"id="footerlink"><li>Other</li></a>
+                        </ul>
+                     </div>
+                      <div class="col-sm-3">
+                          <h4 id="h_tag">NEWSLETTER</h4>
+                          <p id="f_p_tag">Subscribe to our weekly newsletter for all the <br> latest updates</p><br>
+                          <form>
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Email Address">
+                              <div class="input-group-btn">
+                                <button class="btn btn-danger" type="submit" style="font-weight: bold;font-family: 'Josefin Sans', sans-serif;">
+                                  Subscribe
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                      </div>
+                    </div>
+                  </div>
+            </div><br><br>
+            <hr style="margin-left: 50px; margin-right: 50px;margin-bottom: 50px;border-color: rgb(100, 92, 92);">
     </body>
 </html>
