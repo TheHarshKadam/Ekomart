@@ -8,7 +8,7 @@ Made a front end web page for a E-com website
 
 This project was assigned to me in an Internship
 
-![Ekkomart](https://user-images.githubusercontent.com/77354987/125517176-096439f1-36af-4fd4-922d-a2752e7255a5.png)
+![Ekommart](https://user-images.githubusercontent.com/77354987/125518753-71d44daf-1294-4f71-8494-0bc7fdbbdfc6.png)
 
 
 NOTE: This web page is not responsive, cause I am still learning the stuff 🙃
